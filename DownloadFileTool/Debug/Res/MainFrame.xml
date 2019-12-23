@@ -7,27 +7,43 @@
 
     <VerticalLayout name="" text="" tooltip="" float="false" bordersize="0" bkcolor="#00000000" bkcolor2="#00000000" bordercolor="#006B93B2" inset="5,0,5,1" bkimage="file='main.png' corner='13,85,12,34'">
         <HorizontalLayout name="" text="" tooltip="" float="false" bordersize="1" height="24" bkcolor="#006B93B2">
-            <Button name="" text="" tooltip="" float="false" bordersize="0" width="16" height="16" maxheight="16" maxwidth="16" normalimage="file='logo.png' dest='3,3,18,18'"  />
-            <Container name="" text="" tooltip="" float="false" bordersize="1" height="21" bkcolor="#00757676">
-                <Label name="" text="  DownloadTool" tooltip="" float="false" bordersize="1" bkcolor="#00B9D1EF" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  />
-            </Container>
-            <Button name="maxbtn" text="" tooltip="" float="false" bordersize="1" width="27" height="20" bkcolor="#00B9D1EF" bkcolor2="#00757676" maxheight="20" maxwidth="27" normalimage="file='common.bmp' source='0,0,27,20'" hotimage="file='common.bmp' source='27,0,54,20'" pushedimage="file='common.bmp' source='54,0,81,20'"  />
-            <Button name="restorebtn" text="" tooltip="" float="false" bordersize="0" width="26" height="20" bkcolor="#FFB9D1EF" bkcolor2="#FF757676" bordercolor="#FF000000" maxheight="20" maxwidth="26" normalimage="file='common.bmp' source='0,20,26,40'" hotimage="file='common.bmp' source='26,20,52,40'" pushedimage="file='common.bmp' source='52,20,78,40'"  />
-            <Button name="minbtn" text="" tooltip="" float="false" bordersize="0" width="26" height="19" bkcolor="#FFB9D1EF" bkcolor2="#FF757676" bordercolor="#FF000000" maxheight="20" maxwidth="26" normalimage="file='common.bmp' source='0,40,28,60'" hotimage="file='common.bmp' source='27,40,55,60'" pushedimage="file='common.bmp' source='54,40,81,60'"  />
-            <Button name="closebtn" text="" tooltip="" float="false" bordersize="0" width="41" height="21" bkcolor="#FFB9D1EF" bkcolor2="#FF757676" bordercolor="#FF000000" maxheight="20" maxwidth="41" normalimage="file='common.bmp' source='0,60,41,80'" hotimage="file='common.bmp' source='41,60,82,80'" pushedimage="file='common.bmp' source='82,60,123,80'"  />
+            <VerticalLayout width="19" inset="2,2,0,0">
+                    <Label height="19"  bkimage="file='logo.png' "/>
+            </VerticalLayout> 
+            <VerticalLayout width="100" inset="2,2,0,0" bkcolor="#00757676">
+                    <Label text="DownLoadTool" textcolor="#FFFFFFFF" height="19"/>
+            </VerticalLayout> 
+            <VerticalLayout />
+            <VerticalLayout width="77">
+                <Button name="minbtn" tooltip="最小化" float="true" pos="0,5,0,0" width="23" height="19" textcolor="#FF000000" 
+                        disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;btn_mini_normal.png&apos;" 
+                        hotimage=" file=&apos;btn_mini_down.png&apos;" pushedimage=" file=&apos;btn_min_highlight.png&apos;" />
+                <Button name="maxbtn" tooltip="最大化" float="true" pos="22,5,0,0" width="23" height="19" textcolor="#FF000000" 
+                        disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;btn_max_normal.png&apos;" 
+                        hotimage=" file=&apos;btn_max_down.png&apos;" pushedimage="file=&apos;btn_max_highlight.png&apos;" />
+                <Button name="restorebtn" tooltip="恢复" visible="false" float="true" pos="22,5,0,0" width="23" height="19" 
+                        align="center" normalimage=" file=&apos;btn_restore_normal.png&apos;" 
+                        hotimage="file=&apos;btn_restore_down.png&apos;" pushedimage=" file=&apos;btn_restore_highlight.png&apos;" />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="44,5,0,0" width="28" height="19" textcolor="#FF000000" 
+                        disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_close_highlight.png&apos;" 
+                        hotimage="file=&apos;btn_close_down.png&apos;" pushedimage="file=&apos;btn_close_highlight.png&apos;" />
+            </VerticalLayout>
         </HorizontalLayout>
         <HorizontalLayout name="" text="" tooltip="" float="false" bordersize="0" height="50" bkcolor="#ffffffff" />
         <HorizontalLayout name="" text="" tooltip="" float="false" bordersize="0" height="5" bkcolor="#006B93B2" />
         <HorizontalLayout name="" text="" tooltip="" float="false" bordersize="0" height="24" bkimage="file='toolbar\bk.bmp'" bkcolor="#00757676" inset="1,1,1,1" childpadding="0">
-            <Button name="down_new" text="新建" tooltip="" float="false" bordersize="0" width="68" maxheight="22" bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\new.png' dest='3,4,17,18'"  />
-            <Button name="" text="" tooltip="" float="false" bordersize="0" width="30" maxheight="22" bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\start.png' dest='3,4,17,18'"  />
-            <Button name="" text="" tooltip="" float="false" bordersize="0" width="30" maxheight="22" bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\pause2.png' dest='3,4,17,18'"  />
-            <Button name="down_del" text="" tooltip="" float="false" bordersize="0" width="30" maxheight="22" bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\del.png' dest='3,4,17,18'"  />
+            <Label float="false" width="20" />
+            <Button name="btnNew" text="" tooltip="新建任务" float="false" bordersize="0" width="45" maxheight="22" 
+                bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\new.png' dest='3,4,17,18'"  />
+            <Button name="btnDownload" text="" tooltip="全部开始" float="false" bordersize="0" width="45" maxheight="22" 
+                bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\start.png' dest='3,4,17,18'"  />
+            <Button name="btnDelete" text="" tooltip="删除全部" float="false" bordersize="0" width="45" maxheight="22" 
+                bkcolor2="#FF757676" bordercolor="#FF000000" normalimage="file='toolbar\del.png' dest='3,4,17,18'"  />
         </HorizontalLayout>
 
         <HorizontalLayout name="" text="" tooltip="" float="false" bkcolor="#006B93B2" height="30">
-            <Option name="down_list" text="下载列表" width="120" group="true" align="center" selected="true" normalimage="file='TabButton.png' source='0,90,120,120' corner='2,2,2,2'" hotimage="file='TabButton.png' source='0,120,120,150' corner='2,2,2,2'" selectedimage="file='TabButton.png' source='0,60,120,90' corner='2,2,2,2'"/>
-            <Option name="down_his" text="历史记录" width="120" group="true" align="center" normalimage="file='TabButton.png' source='0,90,120,120' corner='2,2,2,2'" hotimage="file='TabButton.png' source='0,120,120,150' corner='2,2,2,2'" selectedimage="file='TabButton.png' source='0,60,120,90' corner='2,2,2,2'"/>
+            <Option name="btnCurr" text="下载列表" width="120" group="true" align="center" selected="true" normalimage="file='TabButton.png' source='0,90,120,120' corner='2,2,2,2'" hotimage="file='TabButton.png' source='0,120,120,150' corner='2,2,2,2'" selectedimage="file='TabButton.png' source='0,60,120,90' corner='2,2,2,2'"/>
+            <Option name="btnHist" text="历史记录" width="120" group="true" align="center" normalimage="file='TabButton.png' source='0,90,120,120' corner='2,2,2,2'" hotimage="file='TabButton.png' source='0,120,120,150' corner='2,2,2,2'" selectedimage="file='TabButton.png' source='0,60,120,90' corner='2,2,2,2'"/>
             <Container name="" text="" tooltip="" float="false" bordersize="1" height="21" bkcolor="#00757676"/>
             <Button name="" text="" tooltip="" float="false" bordersize="0" width="120" height="45" bordercolor="#FF000000" maxheight="14" maxwidth="30" normalimage="file='taskdetail_ico.png' dest='0,5,14,19'"/>
             <Button name="" text="" tooltip="" float="false" bordersize="0" width="120" height="45" bordercolor="#FF000000" maxheight="14" maxwidth="30" normalimage="file='garbage_ico.png' dest='0,5,14,19'"/>
@@ -36,6 +52,11 @@
         <TabLayout name="tab_main" text="" tooltip="" float="false" bordersize="1" bkcolor="#FF757676">
         <!---download info-->
         </TabLayout>
+        <!--version of software-->
+        <HorizontalLayout height="30" bkcolor="#ffffffff">
+            <Label width="10" />
+            <Label name="labelVer" text="V1.0.1_20191223" />
+        </HorizontalLayout>
 
     </VerticalLayout>
 </Window>
