@@ -23,7 +23,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
     MainFrame *pMainFrame(new MainFrame());
 
-    pMainFrame->Create(NULL, _T("MainFrame"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE, 0, 0, 600, 600);
+    pMainFrame->Create(NULL, _T("MainFrame"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE, 0, 0, 800, 600);
     if (nullptr == pMainFrame)return -1;
     pMainFrame->CenterWindow();
 

@@ -22,6 +22,9 @@
     <Filter Include="mainframe">
       <UniqueIdentifier>{a2c230a8-f7e3-40f3-91eb-c7efab1dfb57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mainframe\task">
+      <UniqueIdentifier>{a0cfc53e-943d-4eb7-af09-1a7746c6a581}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,6 +35,12 @@
     </ClCompile>
     <ClCompile Include="MainFrame\MainFrame.cpp">
       <Filter>mainframe</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame\Task\CurrentTask.cpp">
+      <Filter>mainframe\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame\Task\HistoryTask.cpp">
+      <Filter>mainframe\task</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +81,15 @@
     </ClInclude>
     <ClInclude Include="common\CrossPlat.h">
       <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame\Task\CurrentTask.h">
+      <Filter>mainframe\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame\Task\HistoryTask.h">
+      <Filter>mainframe\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame\Task\Task.h">
+      <Filter>mainframe\task</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -49,9 +49,18 @@
             <Button name="" text="" tooltip="" float="false" bordersize="0" width="120" height="45" bordercolor="#FF000000" maxheight="14" maxwidth="30" normalimage="file='garbage_ico.png' dest='0,5,14,19'"/>
             <Button name="" text="" tooltip="" float="false" bordersize="0" width="120" height="45" bordercolor="#FF000000" maxheight="14" maxwidth="30" normalimage="file='color_ico.png' dest='0,5,14,19'"/>
         </HorizontalLayout>
-        <TabLayout name="tab_main" text="" tooltip="" float="false" bordersize="1" bkcolor="#FF757676">
-        <!---download info-->
-        </TabLayout>
+        <HorizontalLayout>
+            <TabLayout name="tab_main" text="" tooltip="" float="false" bordersize="1" bkcolor="#FF757676">
+            <!---download info-->
+                <HorizontalLayout>
+                    <CurrentList name="current_list" header="hidden" itemshowhtml="true" vscrollbar="true" />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                    <HistoryList name="history_list" header="hidden" itemshowhtml="true" vscrollbar="true"  />
+                </HorizontalLayout>
+            </TabLayout>        
+        </HorizontalLayout>
+        <HorizontalLayout height="10" />
         <!--version of software-->
         <HorizontalLayout height="30" bkcolor="#ffffffff">
             <Label width="10" />

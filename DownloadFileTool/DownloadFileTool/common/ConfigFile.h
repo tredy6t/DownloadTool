@@ -26,6 +26,8 @@ static std::string kLogConfig = "log.conf";
 //resource directory
 static std::string kResourcePrefix = "Res//";
 static std::string kToolXmlFile = "MainFrame.xml";
+static std::string kCurrentXmlFile = "CurrentTask.xml";
+static std::string kHistoryXmlFile = "HistoryTask.xml";
 
 
 
@@ -92,4 +94,14 @@ static std::string GetResourceDir()
 static std::string GetToolXml()
 {
     return kToolXmlFile;
+}
+
+static std::string GetCurrentTaskXmlFile()
+{
+    return kCurrentXmlFile;
+}
+
+static std::string GetHistoryTaskXmlFile()
+{
+    return kHistoryXmlFile;
 }

@@ -148,6 +148,8 @@
     <ClCompile Include="GlobalConfig.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainFrame\MainFrame.cpp" />
+    <ClCompile Include="MainFrame\Task\CurrentTask.cpp" />
+    <ClCompile Include="MainFrame\Task\HistoryTask.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Debug\conf\log.conf" />
@@ -164,6 +166,9 @@
     <ClInclude Include="GlobalConfig.h" />
     <ClInclude Include="GlobalInit.h" />
     <ClInclude Include="MainFrame\MainFrame.h" />
+    <ClInclude Include="MainFrame\Task\CurrentTask.h" />
+    <ClInclude Include="MainFrame\Task\HistoryTask.h" />
+    <ClInclude Include="MainFrame\Task\Task.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

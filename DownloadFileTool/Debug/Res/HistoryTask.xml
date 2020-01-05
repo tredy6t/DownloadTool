@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="500,50">
+    <HorizontalLayout>
+        <!--复选框-->
+        <HorizontalLayout width="20">
+            <Option name="select" style="cb_style"/>
+        </HorizontalLayout>
+        <!--icon-->
+        <VerticalLayout name="file_type_ico" width="20" height="30" />
+        <!--文件信息，包含文件名以及下载进度信息-->
+        <VerticalLayout width="300" height="40">
+            <HorizontalLayout height="20">
+                <Label name="file_name" width="280" height="20" />
+            </HorizontalLayout>
+            <HorizontalLayout height="20">
+                <Label name="file_length" width="100" height="20" />
+                <Label name="file_time" width="200" height="20" />
+            </HorizontalLayout>
+        </VerticalLayout>
+        <!--buttons-->
+        <VerticalLayout width="30" hight="20">
+            <Button name="single_delete" width="20" height="20"/>
+        </VerticalLayout>
+        <VerticalLayout width="30" hight="20">
+            <Button name="single_open" width="20" height="20"/>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="500,50">
+    <HorizontalLayout>
+        <!--复选框-->
+        <VerticalLayout width="20">
+            <Option name="select" style="cb_style"/>
+        </VerticalLayout>
+        <!--icon-->
+        <VerticalLayout name="file_type_ico" width="20" height="30" />
+        <!--文件信息，包含文件名以及下载进度信息-->
+        <VerticalLayout width="160" height="40">
+            <Label name="file_name" width="150" height="20" />
+            <Label name="process_info" width="150" height="20" />
+        </VerticalLayout>
+        <!--进度显示，暂时以数值显示，后续可用进度条-->
+        <VerticalLayout width="110">
+            <Label name="process" width="100" height="20" />
+            <Label name="net_info" width="100" height="20" />
+        </VerticalLayout>
+        <!--buttons-->
+        <VerticalLayout width="30" hight="20">
+            <Button name="single_start" width="20" height="20" visible="false"/>
+            <Button name="single_paues" width="20" height="20" />
+        </VerticalLayout>
+        <VerticalLayout width="30" hight="20">
+            <Button name="single_delete" width="20" height="20"/>
+        </VerticalLayout>
+        <VerticalLayout width="30" hight="20">
+            <Button name="single_open" width="20" height="20"/>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

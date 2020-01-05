@@ -1,6 +1,6 @@
 #pragma once
 #include"../common/DuilibDefine.h"
-#include <Duilib/Utils/WinImplBase.h> 
+#include <Utils/WinImplBase.h> 
 #include "../common/ConfigFile.h"
 #include "../mainframe/MainFrame.h"
 

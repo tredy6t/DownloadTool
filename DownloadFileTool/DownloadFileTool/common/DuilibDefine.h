@@ -18,7 +18,7 @@
 #define _WIN32_IE 0x0600	// Change this to the appropriate value to target other versions of IE.
 #endif
 
-#include <Duilib/UIlib.h> 
+#include <UIlib.h> 
 #include <atlstr.h>
 
 using namespace DuiLib;
